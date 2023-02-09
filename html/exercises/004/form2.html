@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Exercise</title>
+</head>
+<body>
+  <h3>League of Astronauts Registration</h3>
+  <form>
+    <div>
+      <label for="astronaut_name">Name:</label>
+      <input type="text" id="astronaut_name" name="astronaut_name" placeholder="Yuri Gagarin">
+    </div>
+    <br>
+    <div>
+      <label for="astronaut_email">Email:</label>
+      <input type="text" id="astronaut_email" name="astronaut_email" placeholder="yurigagarin@gmail.com"> <span>-</span>
+      <label for="astronaut_psw">Password:</label>
+      <input type="password" id="astronaut-psw" name="astronaut_psw">
+    </div>
+    <br>
+    <div>
+      <label for="date_birth">Date of Birth:</label>
+      <input type="date" id="date_birth" name="date_birth"> <span>-</span>
+      <label for="pic">Picture</label>
+      <input type="file" id="pic" name="pic" placeholder="choose file">
+    </div>
+    <br>
+    <div>
+      <label for="nationality">Nationality:</label>
+      <select name=nationality id="Nationality">
+        <option value="Russia">Russia</option>
+        <option value="American">Russia</option>
+        <option value="Brazilian">Brazilian</option>
+      </select>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="gender" name="gender" value="m/f"><label for="gender">F</label>
+      <input type="radio" id="gender" name="gender" value="m/f"><label for="gender">M</label>
+    </div>
+    <br>
+    <div>
+      <span>Main Skills:</span><br>
+      <label for="skills">Intelligence</label>
+      <input type="checkbox" id="skills" name="skills" value="intelligence">
+      <label for="skills">/ Resilience</label>
+      <input type="checkbox" id="skills" name="skills" value="resilience">
+      <label for="skills">/ Physical Preparation</label>
+      <input type="checkbox" id="skills" name="skills" value="physical_preparation">
+      <label for="skills">/ Education</label>
+      <input type="checkbox" id="skills" name="skills" value="education">
+    </div>
+    <br>
+    <textarea name="description" id="description" cols="30" rows="10" placeholder="Why would you like to be an Astronaut?"></textarea>
+  </form>
+</body>
+</html>
