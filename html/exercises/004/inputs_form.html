@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Form Inputs in HTML5 </title>
+</head>
+<body>
+  <h1>Resume of Form Inputs - HTML5</h1>
+
+  <div>
+    <form>
+      <label for="fav_color">Choose your favorite color</label>
+      <input type="color" id="fav_color" name="fav_color" value="color"><br><br> <!--color-->
+    </form>
+  </div>
+
+  <div>
+    <form><input type="date" id="date" name="date" value="date"><br><br></form> <!--date-->
+  </div>
+
+  <div>
+    <form>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime"> <!--datetime-local-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="email">Write down your email:</label>
+      <input type="email" id="email" name="email" placeholder="juliana1@gmail.com"> <!--email-->
+      <input type="submit" value="submit"> <!--submit-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile"> <!--file-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth"> <!--month-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5"> <!--number-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50"> <!--range-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <!--tel-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt"> <!--time-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage"> <!--url-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="week">Select a week:</label>
+      <input type="week" id="week" name="week"> <!--week-->
+    </form>
+  </div>
+
+  <h1>New form inputs - HTML5</h1>
+  
+  <div>
+      <form>
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers"> <!--datalist-->
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+      <br>
+  </div>
+
+  <div>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50">
+      +<input type="number" id="b" value="25"> <!--output-->
+      =<output name="x" for="a b"></output>
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="file">Downloading progress:</label>
+      <progress id="file" value="32" max="100"> 32% </progress> <!--progress-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form>
+      <label for="disk_c">Disk usage C:</label>
+      <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+      <label for="disk_d">Disk usage D:</label>
+      <meter id="disk_d" value="0.5">50%</meter> <!--meter-->
+    </form>
+    <br>
+  </div>
+
+  <div>
+    <form autocomplete="on">
+      <label for="f_name">First Name:</label>
+      <input type="text" id="f_name" name="f_name" placeholder="Juliana">
+      <input type="submit" value="submit">
+    </form>
+  </div>
+
+</body>
+</html>
