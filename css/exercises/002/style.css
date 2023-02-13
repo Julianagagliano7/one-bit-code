@@ -1,0 +1,38 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+  --colorpost: #fad4c885; 
+  --colordate: #21b49c; 
+  --h1font: 'Montserrat', sans-serif;
+  --datefont: 'Roboto', sans-serif;
+  --postfont: 'Open Sans', sans-serif; 
+}
+
+body {
+  background-color: #fffafa;
+}
+
+main {
+  background-color:var(--colorpost);
+  width: 950px;
+  margin: auto;
+  padding: 5px 40px 5px 40px; 
+}
+
+h1 {
+  font-family: var(--h1font);
+  font-weight: 500;
+}
+
+.date {
+  color: var(--colordate);
+  font-family: var(--datefont);
+  padding-top: 15px;
+}
+
+.post_content {
+  font-family: var(--postfont);
+}
