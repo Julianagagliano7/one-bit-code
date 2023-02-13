@@ -1,0 +1,32 @@
+@charset "UTF-8"; 
+
+:root{
+  --yellow: ​#f1c40f; 
+  --blue:#2c3e50; 
+  --red: #e74c3c; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h1 {
+  color: white;
+}
+
+h1 + h3 {
+  color: yellow;
+}
+
+ul > li {
+  color: white;
+}
+
+.title {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.red_text {
+  color: var(--red);
+}
