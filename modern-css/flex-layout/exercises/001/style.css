@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f2ebe3;
+  height: 100vh;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
