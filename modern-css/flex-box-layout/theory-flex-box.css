@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkgray;
+  min-height: 100vh;
+  display: flex;
+  gap: 0px 15px;                                   /* junction of the row with the column - gap: column row; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;                                 /* break the itens moving them to another line bellow     */
+}
+ 
+.item {
+  width: 200px;
+  height: 200px;
+  border: 1.5px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+  /* justify-content: center;        */            /* horizontal alignment of flex-itens                                                             */
+  /* justify-content: flex-start;    */            /* default alignment - beginning of the div                                                       */
+  /* justify-content: flex-end;      */            /* alignment in the end of the div                                                                */        
+  /* justify-content: space-around;  */            /* equal space between itens                                                                      */                   
+  /* justify-content: space-between; */            /* the most possible space between itens(div-beginning div-end)                                   */
+  /* justify-content: space-evenly;  */            /* equal space between itns without putting (div-beginning and div-end)                           */
+  
+
+  /* align-itens: center;            */            /* vertical alignment of flex-itens                                                               */
+  /* align-itens: flex-start;        */            /* default alignment - beginning of the screen in vertical alignment                              */
+  /* align-itens: flex-end;          */            /* end of the screen in vertical alignment                                                        */
+  /* align-itens: stretch;           */            /* stretch the axis vertically - estica o eixo vertical  - necessário zerar altura                */
+
+
+
+  /* flex-direction: column;         */ 
+  /* align-itens: stretch;           */            /* alternative way to strech the axis horizontally                                                */
+  /* width: 0px;                     */
+
+
+  /* flex-direction: column; row-gap: 15px; */
+  /* flex-direction: row; column-gap: 15px; */
+
+
+  /* flex-wrap: wrap-reverse         */           /* inverts the last iten, putting it above instead of bellow                                       */
+
+
+ 
+
