@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*  {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+
+}
+
+.logo-rock {
+  width: 40px;
+}
+
+.logo-onebit-code {
+  width: 200px;
+}
+
+
+.button-header {
+  height: 50px;
+  border: 1px solid red;
+  width: 80px;
+  border-radius: 10px;
+}
