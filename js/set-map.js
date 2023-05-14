@@ -11,4 +11,3 @@ console.log(meuSet.size); // irá imprimir "3" */
 /* console.log(meuSet) */;
 
 console.log(meuSet.has(123));
-
