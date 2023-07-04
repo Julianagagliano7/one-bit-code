@@ -12,21 +12,20 @@ function damageCalc(attack, defense, shield) {
   return harm;
 }
 
-function presentCombatResults(currentDamage, currentHitPointAttack, currentHitPointDefense) {
-  let nHitPointAttack = 0;
-  let nHitPointDefense = 0;
+function battleResult(harm, lifeDefense) {
+  let newHitPointDefense = 0;
 
-  nHitPointAttack = (currentDamage - currentHitPointAttack);
-  nHitPointDefense = (currentDamage - currentHitPointDefense);
-
-  return { newHitPointAttack: nHitPointAttack, newHitPointDefense: nHitPointDefense };
+  if(harm === 0) {
+    newHitPointDefense = lifeDefense; 
+  }
+  else if (harm < lifeDefense){
+    newHitPointDefense = lifeDefense - harm; 
+  }
+  else {
+    newHitPointDefense = harm - lifeDefense; 
+  }
+  return newHitPointDefense;
 }
-
-function finalInformations (nameAttack, attack, lifeAttack, newLifeAttack, nameDefense, defense, lifeDefense, shield, newLifeDefense) {
-  alert(nameAttack + ' \nAtaque: ' + attack + '\nQuantidade de Vida: ' + lifeAttack + '\nVida após combate: ' + newLifeAttack);
-  alert(nameDefense + ' \nDefesa: ' + defense + '\nQuantidade de Vida: ' + lifeDefense + '\nEscudo? ' + shield + '\nVida após combate: ' + newLifeDefense);
-}
-
 
 //Inputs do Usuário 
 
@@ -34,26 +33,25 @@ let caracterAttack = prompt('Insira o nome do seu personagem de ataque: ');
 
 let attackPower = parseFloat(prompt('Insira o poder de ataque do personagem: '));
 
-let hitPointAttack = parseFloat(prompt('Insira a quantidade de pontos de vida de seu personagem de ataque: '));
-
 let caracterDefense = prompt('Insira o nome do personagem de defesa: ');
 
 let defensePower = parseFloat(prompt('Insira o poder de defesa de seu personagem: ')); 
 
 let hitPointDefense = parseFloat(prompt('Insira a quantidade de pontos de vida de seu personagem de defesa: '));
 
-let hasShield = prompt("Digite 'sim' ou 'não' se o seu personagem tem escudo");
+let hasShield = prompt("Digite 'true' (sim) ou 'false' (não) se o seu personagem tem escudo");
 
 
 //Chamamento de Funções
 
 let severityDamage = damageCalc(attackPower, defensePower, hasShield);
+let newLifeDefense = battleResult(severityDamage, hitPointDefense); 
 
-let results = presentCombatResults(severityDamage, hitPointAttack, hitPointDefense); 
-let newHitPointAttack = results['newHitPointAttack'];
-let newHitPointDefense = results['newHitPointDefense'];
+alert(caracterAttack + ' deu ' + severityDamage + ' de dano em ' + caracterDefense);
+alert('A nova vida de ' + caracterDefense  + ' é: ' + newLifeDefense); 
 
-finalInformations(caracterAttack,attackPower, hitPointAttack, newHitPointAttack, caracterDefense, defensePower, hitPointDefense, hasShield, newHitPointDefense);
+
+
 
 
 
