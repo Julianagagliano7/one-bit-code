@@ -32,17 +32,17 @@ function finalInformations (nameAttack, attack, lifeAttack, newLifeAttack, nameD
 
 let caracterAttack = prompt('Insira o nome do seu personagem de ataque: ');
 
-let attackPower = prompt('Insira o poder de ataque do personagem: ');
+let attackPower = parseFloat(prompt('Insira o poder de ataque do personagem: '));
 
-let hitPointAttack = prompt('Insira a quantidade de pontos de vida de seu personagem de ataque: ');
+let hitPointAttack = parseFloat(prompt('Insira a quantidade de pontos de vida de seu personagem de ataque: '));
 
 let caracterDefense = prompt('Insira o nome do personagem de defesa: ');
 
-let defensePower = prompt('Insira o poder de defesa de seu personagem: '); 
+let defensePower = parseFloat(prompt('Insira o poder de defesa de seu personagem: ')); 
 
-let hitPointDefense = prompt('Insira a quantidade de pontos de vida de seu personagem de defesa: ');
+let hitPointDefense = parseFloat(prompt('Insira a quantidade de pontos de vida de seu personagem de defesa: '));
 
-let hasShield = prompt("Digite 'true' para 'sim' e 'false' para 'não'");
+let hasShield = prompt("Digite 'sim' ou 'não' se o seu personagem tem escudo");
 
 
 //Chamamento de Funções
@@ -53,7 +53,7 @@ let results = presentCombatResults(severityDamage, hitPointAttack, hitPointDefen
 let newHitPointAttack = results['newHitPointAttack'];
 let newHitPointDefense = results['newHitPointDefense'];
 
-finalInformations(caracterAttack,attackPower, hitPointAttack, newHitPointAttack, caracterDefense, defensePower, newHitPointDefense, hasShield, newHitPointDefense);
+finalInformations(caracterAttack,attackPower, hitPointAttack, newHitPointAttack, caracterDefense, defensePower, hitPointDefense, hasShield, newHitPointDefense);
 
 
 

@@ -12,9 +12,9 @@ function isFaster(s1,s2,c1,c2){
 }
 
 let car1   = prompt('Digite o modelo do primeiro carro:');
-let speed1 = prompt('Digite a velocidade do primeiro carro:');
+let speed1 = parseFloat(prompt('Digite a velocidade do primeiro carro:'));
 
 let car2   = prompt('Digite o modelo do segundo carro:');
-let speed2 = prompt('Digite a velocidade do segundo carro:');
+let speed2 = parseFloat(prompt('Digite a velocidade do segundo carro:'));
 
 let result = isFaster(speed1, speed2, car1, car2); 
