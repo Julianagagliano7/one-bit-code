@@ -26,8 +26,9 @@ function bestRockSong(response) {
     }
   });
 }
-/* 
-bestRockBand("Queen")
+
+// Jeito antigo de se fazer...mil then aninhados - await async resolve isso 
+/* bestRockBand("Kiss")
   .then((response) => {
     console.log("Checking the answer...");
     return bestRockSong(response);
@@ -41,13 +42,17 @@ bestRockBand("Queen")
   }); */
 
 // como a primeira promise deu reject, ele não chega a executar a segunda - conceito de programação ASSÍNCRONA
-// alternativa para a chamada com vários then's(como está acima) é utilizando o AWAIT
 
-async function showTheResults(){
-  const bestRockBandResponse = await bestRockBand('Queen');
-  console.log(bestRockBandResponse);
-  const bestRockSongResponse = await bestRockSong(bestRockBandResponse); 
-  console.log(bestRockSongResponse); 
+
+async function showTheResults() {
+  try {
+    const bestRockBandResponse = await bestRockBand("Kiss");
+    console.log(bestRockBandResponse);
+    const bestRockSongResponse = await bestRockSong(bestRockBandResponse);
+    console.log(bestRockSongResponse);
+  } catch (err) {
+    console.log(err.mgs);
+  }
 }
 
-showTheResults(); 
+showTheResults();
