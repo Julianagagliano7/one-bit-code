@@ -17,8 +17,8 @@ function whoIsBetterDeveloper(callback, errorCallback) {
 }
 
 whoIsBetterDeveloper((result) => {
-  console.log(result.name + "" + result.message);
+  console.log(result.name + " " + result.message);
 }),
   (error) => {
-    console.log(error.name + "" + error.message);
+    console.log(error.name + " " + error.message);
   };
