@@ -9,15 +9,16 @@ const user = {
   },
 };
 
-// user.exibirInfos(); 
+user.exibirInfos();
+
 // const exibir = user.exibirInfos //perde a referência/conexão do objeto
-// exibir()
+// exibir() //perde a referência/conexão do objeto
 
 
 //Adicionando contexto à função com o método Bind()
 const exibir = function(){
-  console.log(this.name)
+  console.log(this.role)
 }
-const exibirNome = exibir.bind(user); 
-exibirNome(); 
-exibir(); 
+const exibirRole = exibir.bind(user); 
+exibirRole()
+

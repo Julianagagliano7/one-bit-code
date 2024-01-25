@@ -1,3 +1,6 @@
+//Método que sempre espera receber um objeto para ser executado no contexto de uma função
+
+
 // const person = {
 //   fullName: function () {
 //     return this.firstName + " " + this.lastName;
