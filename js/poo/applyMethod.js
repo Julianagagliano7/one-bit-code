@@ -1,3 +1,6 @@
+//apply usa um array de argumentos
+//call usa objeto
+
 const obj = {name: "Jonh"};
 
 let greeting = function(){
