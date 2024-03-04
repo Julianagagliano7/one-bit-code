@@ -12,5 +12,6 @@ class Admin extends User {
 
 const newAdmin = new Admin('Carlos', 'Carlos@gmail.com', '01/01/2000');
 console.log(newAdmin.createCourse('Math', 10))
+console.log(newAdmin.exibirInfos())
 
 
